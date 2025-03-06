@@ -108,7 +108,7 @@ def is_bot_user(data) -> bool:
             get_logger().info(f"BitBucket actor type is not 'user', skipping: {actor}")
             return True
     except Exception as e:
-        get_logger().error(f"Failed 'is_bot_user' logic: {e}")
+        get_logger().error(f"Failed 'is_bot_user_process' logic: {e}")
     return False
 
 
